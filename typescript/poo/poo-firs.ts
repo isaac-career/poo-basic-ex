@@ -1,5 +1,5 @@
 class Pelicula {
-    nombre?: string = 'Goal 3'
+    nombre?: string
     protagonistas?: string[]
     actores?: string[]
 
@@ -8,8 +8,16 @@ class Pelicula {
         console.log(` ${this.nombre}  esta siendo proyectada`)
     } 
 
+
+    constructor(nombre:string, protagonistas: string[], actores: string[]){
+        this.nombre = nombre
+        this.protagonistas = protagonistas
+        this.actores = actores
+    }
+
 }
 
-const pelicula = new Pelicula()
-
-pelicula.proyectarEnCine()
+const pelicula = new Pelicula('sicario', ['Benito','Cochiloco'], ['damian',' jose'])
+// const pelicula = new Pelicula()
+console.log(pelicula)
+// pelicula.proyectarEnCine()
