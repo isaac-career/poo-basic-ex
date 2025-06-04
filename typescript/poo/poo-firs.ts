@@ -19,5 +19,5 @@ class Pelicula {
 
 const pelicula = new Pelicula('sicario', ['Benito','Cochiloco'], ['damian',' jose'])
 // const pelicula = new Pelicula()
-console.log(pelicula)
+console.log(pelicula) 
 // pelicula.proyectarEnCine()
